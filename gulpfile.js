@@ -40,9 +40,29 @@ function modules() {
     ])
     .pipe(gulp.dest('./vendor/jquery'));
     var jqueryeasing = gulp.src([
-      './node_modules\jquery.easing'
+      './node_modules/jquery.easing/*'
     ])
-  return merge(bootstrap, jquery);
+    .pipe(gulp.dest('./vendor/jquery-easing'));
+    var magnificpopup = gulp.src([
+      './node_modules/magnific-popup/**/*'
+    ])
+    
+    .pipe(gulp.dest('./vendor/magnific-popup'));
+
+    var simplebar = gulp.src([
+      './node_modules/simplebar/**/*'
+    ])
+    .pipe(gulp.dest('./vendor/simplebar'));
+
+    var filterizr = gulp.src([
+      './node_modules/filterizr/**/*'
+    ])
+    .pipe(gulp.dest('./vendor/filterizr'));
+
+
+
+    
+  return merge(bootstrap, jquery, jqueryeasing, magnificpopup, simplebar, filterizr);
 }
 
 // Watch files
