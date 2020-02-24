@@ -59,10 +59,14 @@ function modules() {
     ])
     .pipe(gulp.dest('./vendor/filterizr'));
 
+    var fontawesome = gulp.src([
+      './node_modules/@fortawesome/fontawesome-free/**/*'
+    ])
+    .pipe(gulp.dest('./vendor/fontawesome'));
 
 
     
-  return merge(bootstrap, jquery, jqueryeasing, magnificpopup, simplebar, filterizr);
+  return merge(bootstrap, jquery, jqueryeasing, magnificpopup, simplebar, filterizr, fontawesome);
 }
 
 // Watch files
