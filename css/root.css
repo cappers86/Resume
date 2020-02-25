@@ -5,5 +5,13 @@
  */
 
 .background-blue {
-  background: rgba(34, 76, 143, 0.84);
+  background: rgba(16, 119, 225, 0.73);
+}
+
+.sidebar {
+  padding: 30px;
+}
+
+.sidebar img {
+  box-shadow: 0 1px 32px rgba(3, 16, 28, 0.79);
 }
