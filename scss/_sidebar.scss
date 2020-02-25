@@ -5,6 +5,13 @@
         box-shadow: 0 1px 32px rgba(3, 16, 28, 0.79);
     }
     figcaption {
-        margin-top:
+        margin-top: 32px;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1;
+        small {
+            font-size: 32px;
+            font-weight: inherit;
+        }
     }
 }
